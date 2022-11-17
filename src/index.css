@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-feature-settings: "liga"0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(/src/assets/bck.jpg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  line-height: 160%;
+}
+
+/* Container */
+
+.container-lg {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container-lg {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-lg {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-lg {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container-lg {
+    width: 1280px;
+  }
+}
+
+/* End Container */
+/* Flex */
+
+.flex {
+  display: flex;
+}
+.imgbann{
+  margin-top: -110px;
+  width: 800px;
+  height: 350px;
+}
+.flexcol {
+  flex-direction: column;
+}
+
+.flexrow {
+  flex-direction: row;
+}
+
+.centerflex {
+  align-items: center;
+}
+
+.vertcenter {
+  justify-content: center;
+}
+
+.space {
+  justify-content: space-evenly;
+}
+
+.relative {
+  position: relative;
+}
+
+.relative2{
+  position: relative;
+  margin-top: 30px !important;
+  margin-bottom: 0px;
+}
+@media (max-width: 900px) {
+  .relative2 {
+  font-size: .7em;
+  
+  }
+}
+
+.relativeImage{
+  width: 16% !important;
+  border: 6px solid #be6e46;
+  
+  
+}
+@media (max-width: 900px) {
+  .relativeImage {
+    width: 56% !important;
+  
+  }
+}
+
+.flexwrap {
+  flex-wrap: wrap;
+}
+
+/* End Flex */
+
+.secPad {
+  padding: 90px 0;
+}
+
+/* Hero */
+
+.hero {
+  height: 100%;
+  min-height: 850px;
+  color: #fff;
+  overflow: hidden;
+  background-image: url(/src/assets/bck.jpg);
+}
+
+.hero::before {
+  content: '';
+  background-image: url(/src/assets/bck.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.hero .swiper-wrapper {
+  transition: transform linear;
+}
+
+.hero .swiper {
+  width: 30%;
+  overflow: visible;
+  transition: all .5s;
+}
+
+.hero .swiper:hover {
+  transform: scale(1.1);
+}
+
+.marquee span {
+  margin-left: 20px;
+}
+
+.sliderHero {
+  margin-top: 5px;
+}
+
+.sliderHero img {
+  width: 320px;
+  height: 320px;
+}
+
+.swiperText {
+  color: #313b2b;
+  font-size: 24px;
+}
+
+
+
+
+
+
+@keyframes blink {
+  0% {
+    opacity: 0.0;
+  }
+
+  25% {
+    opacity: 0.0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.0;
+  }
+}
+
+.hero h1 {
+  padding: 0 10px;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.btn {
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  background: #be6e46;
+  margin: 0 10px;
+  font-size: 14px;
+  font-family: 'Press Start 2P';
+  border: 3px solid black !important;
+  cursor: pointer;
+}
+
+
+
+.btn:hover {
+  box-shadow: 14px 14px 0px 2px #121b12;
+  transform: translate(-3px, -3px);
+}
+
+/* End Hero */
+
+/* History */
+
+.history {
+
+  color: #313b2b;
+}
+
+.cardPix {
+  background: transparent;
+  padding: 0 40px 40px;
+  
+  margin: 0 40px;
+  color: #fff;
+  
+}
+
+.cardTitle {
+  padding: 40px;
+  width: fit-content;
+  background: #be6e46;
+  color: #fffffff0;
+  margin: -50px auto 40px;
+}
+
+
+
+@media (max-width: 900px) {
+  .hist{
+    font-size: .45em;
+  }
+}
+@media (max-width: 900px) {
+  .imgbann {
+    width: 270px;
+    height: 150px;
+    
+  }
+}
+@media (max-width: 900px) {
+  .shine {
+    width: 100% !important;
+    margin-bottom: -80px !important;
+    margin-top: 30px !important;
+  }
+}
+
+
+
+
+
+.listroad{
+  margin-left: -50px;
+  font-size: .85em !important;
+}
+
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.readBtn {
+  margin-top: 50px;
+  
+}
+.readBtn a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* End History */
+
+/* Roadmap */
+
+.shine{
+  margin-top: 0px;
+  margin-bottom: -50px;
+  width: 80% ;
+}
+
+.shine2{
+  margin-top: 0px;
+  margin-bottom: -50px;
+  width: 20% !important;
+}
+
+.road {
+  background: #070e0da6;
+  color: #fff;
+}
+
+.cardRoad {
+  padding: 50px;
+  background: transparent;
+  color: #fff;
+  line-height: 160%;
+  position: relative;
+  border: 3px solid #be6e46;
+  transition: all .5s;
+  justify-content: center;
+  display: flex;
+  margin-top: 60px;
+  font-size: 1em !important;
+}
+
+.cardRoad span {
+  position: absolute;
+  top: -35px;
+  padding: 20px 20px 18px 23px;
+  background: #be6e46;
+ 
+}
+
+.activeRoad {
+  border: 8px solid #be6e46;
+}
+
+.listroad{
+  list-style: none;
+}
+
+
+.road h1 {
+  color: #273a28;
+}
+
+/* End Roadmap */
+
+/* Faq */
+
+.faq {
+  background: #161817;
+  color: #fff;
+}
+
+.accordion {
+  background: transparent;
+  
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.accordion-item {
+  border-bottom: 2px solid #161817;
+
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  cursor: pointer;
+  text-align: initial;
+  align-items: center;
+  line-height: 160%;
+
+}
+
+.accordion-content {
+  padding: 20px 40px;
+  height: auto;
+  text-align: left;
+  line-height: 160%;
+  background: transparent;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.exp {
+  margin-left: 30px;
+}
+
+/* End Faq */
+
+/*  Team */
+.team {
+  background: #070e0da6;
+  color: #fff;
+}
+
+.cardTeam {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.ed .player {
+  background: #be6e46 !important;
+}
+
+.mau .player {
+  background: #be6e46 !important;
+}
+
+.cardTeam img {
+  
+  width: 55%;
+}
+
+.mau img {
+  animation: blinkBorderp1 1s infinite linear;
+}
+
+@keyframes blinkBorderp1 {
+  0% {
+    border-color: #be6e46;
+  }
+
+  50% {
+    border-color: #be6e46;
+  }
+
+  100% {
+    border-color: #be6e46;
+  }
+}
+
+.ed img {
+  animation: blinkBorderp2 1s infinite linear;
+}
+
+@keyframes blinkBorderp2 {
+  0% {
+    border-color: #be6e46;
+  }
+
+  50% {
+    border-color: #be6e46;
+  }
+
+  100% {
+    border-color: #be6e46;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.cardTeam h4 {
+  width: fit-content;
+  margin: -10px auto 20px;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.mau h4 {
+  background: #be6e46;
+  box-shadow: 4px 4px 0px 2px #161817;
+}
+
+.ed h4 {
+  background: #be6e46;
+  box-shadow: 4px 4px 0px 2px #161817;
+}
+
+.cardTeam span {
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* End Team */
+
+/* Diamonds */
+.diam {
+  background: #161817;
+  color: #fff;
+}
+.cardDiam {
+  display: flex;
+  flex-direction: column;
+}
+.cardDiam img {
+  width: 70%;
+  margin-bottom: 30px;
+  align-self: center;
+  position: relative;
+}
+
+.cardDiam span {
+  line-height: 160%;
+
+}
+.diamondsDiv {
+  margin-top: 50px;
+}
+/* End Diamonds */
+
+.footer {
+  color: #515f5a;
+  font-size: 12px;
+  padding: 20px 0 10px;
+}
+
+.footerText {
+  font-size: 11px;
+  padding: 10px;
+  color: #445650;
+}
+.footerDiv {
+  background: #070f0d;
+  padding-bottom: 10px;
+  overflow: hidden;
+  border-top: 3px solid #be6e46;;
+}
+/* Media */
+
+@media (max-width: 850px) {
+
+  /* Global */
+  p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  .btn {
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .secPad {
+    padding: 120px 0;
+  }
+
+  /* End Global */
+  .hero {
+    height: 100vh;
+    min-height: 600px;
+  }
+
+  .swiperText {
+    width: auto !important;
+  }
+
+  .pixelCon {
+    overflow: hidden;
+  }
+
+  .pixel {
+    width: 14.28%;
+  }
+
+  .hero .swiper {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .buttons .btn {
+    margin-bottom: 20px;
+  }
+
+  .cardTitle {
+    padding: 28px;
+    margin: -30px auto 30px;
+  }
+
+  .cardPix {
+    padding: 0 20px 40px;
+    margin: 0 20px;
+  }
+
+  .accordion-title {
+    font-size: 14px;
+  }
+
+  .accordion-content {
+    font-size: 12px;
+    
+  }
+
+  .cardRoad {
+    font-size: 12px;
+    padding: 30px 25px 25px;
+    border: 1px solid black;
+  }
+
+  .cardTeam {
+    width: 70%;
+    margin-bottom: 40px;
+  }
+  .cardDiam span {
+    font-size: 12px;    
+  } 
+}
+
+.listroad{
+  font-size: 1em;
+}
+@media (max-width: 900px) {
+  .buy {
+  width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .disc {
+  width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .twit {
+  width: 100%;
+  
+  }
+}
+
+@media (max-width: 900px) {
+  .sta {
+    display: none;
+  }
+}
+
+
+/* End Media */

@@ -1,0 +1,8 @@
+{
+  "short_name": "LOREM IPSUM",
+  "name": "LOREM IPSUM",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#070e0d",
+  "background_color": "#ffffff"
+}
